@@ -23,7 +23,7 @@ To display a list of posts, use Jekyll syntax similar to the following:
 [source, html]
 ----
 {% for post in site.posts limit: 5 %}
-<a href=".{{ post.url }}">{{ post.navtitle }}</a>
+<a href=".{{ post.url |relative_url }}">{{ post.navtitle }}</a>
 {% endfor %}
 ----
 

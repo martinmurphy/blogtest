@@ -1,5 +1,6 @@
 title: Martin Murphy Blog Test
 description: Testing with Jekyll AsciiDoc Quickstart project.
+baseurl: /blogtest/
 exclude:
   - LICENSE.adoc
   - README.adoc
@@ -8,7 +9,7 @@ exclude:
   - Rakefile
 asciidoc: {}
 asciidoctor:
-  base_dir: /blogtest/
+  base_dir: :docdir
   safe: unsafe
   attributes:
     - idseparator=_

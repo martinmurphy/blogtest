@@ -30,7 +30,7 @@
             <!-- Title Area -->
             <li class="name">
                 <h1>
-                    <a href="{{page.root}}">{{site.title}}</a>
+                    <a href="{{page.root | relative_url}}">{{site.title}}</a>
                 </h1>
             </li>
             <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -47,7 +47,7 @@
             <div id="posts" class="posts nav">
                 {% for post in site.posts limit: 5 %}
                 <section>
-                    <a class="blogtitle" href="{{ post.url }}">
+                    <a class="blogtitle" href="{{ post.url  | relative_url}}">
                         <h3>{{ post.navtitle }}</h3>
                     </a>
                     <div>{{ post.excerpt }}</div>
