@@ -2,4 +2,14 @@ language: ruby
 rvm:
   - 2.6.3
 sudo: false
+cache: bundler
+
 script: bash ./build.sh
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: site
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
