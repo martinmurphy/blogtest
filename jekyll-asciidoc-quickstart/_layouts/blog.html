@@ -11,13 +11,13 @@
         content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <meta name="author" content="Your name goes here">
     <meta name="copyright" content="Maybe consider a Creative Commons license">
-    <link rel="stylesheet" href="{{page.root}}css/foundation.css">
-    <link rel="stylesheet" href="{{page.root}}css/font-awesome.css">
-    <link rel="stylesheet" href="{{page.root}}css/coderay.css">
-    <link rel="stylesheet" href="{{page.root}}css/asciidoctor.css">
-    <link rel="stylesheet" href="{{page.root}}css/martin.css">
-    <script src="{{page.root}}js/vendor/modernizr.js"></script>
-    <script src="{{page.root}}js/toc.js"></script>
+    <link rel="stylesheet" href="{{page.root | relative_url}}css/foundation.css">
+    <link rel="stylesheet" href="{{page.root | relative_url}}css/font-awesome.css">
+    <link rel="stylesheet" href="{{page.root | relative_url}}css/coderay.css">
+    <link rel="stylesheet" href="{{page.root | relative_url}}css/asciidoctor.css">
+    <link rel="stylesheet" href="{{page.root | relative_url}}css/martin.css">
+    <script src="{{page.root | relative_url}}js/vendor/modernizr.js"></script>
+    <script src="{{page.root | relative_url}}js/toc.js"></script>
 </head>
 
 <body>
@@ -93,8 +93,8 @@
         </div>
     </footer>
 
-    <script src="{{page.root}}js/vendor/jquery.js"></script>
-    <script src="{{page.root}}js/foundation.min.js"></script>
+    <script src="{{page.root | relative_url}}js/vendor/jquery.js"></script>
+    <script src="{{page.root | relative_url}}js/foundation.min.js"></script>
     <script>
         $(document).foundation();
         var doc = document.documentElement;
