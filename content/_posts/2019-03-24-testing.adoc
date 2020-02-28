@@ -1,5 +1,4 @@
 = Test Entry
-:showtitle:
 :page-navtitle: Test Entry
 :page-excerpt: This is the excerpt from the test page
 

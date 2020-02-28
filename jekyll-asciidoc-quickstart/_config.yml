@@ -1,5 +1,6 @@
 title: Martin Murphy Blog Test
 description: Testing with Jekyll AsciiDoc Quickstart project.
+footer: Copyright &copy; 2020, Martin Murphy
 baseurl: /blogtest/
 exclude:
   - LICENSE.adoc
